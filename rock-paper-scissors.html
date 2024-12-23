@@ -1,10 +1,18 @@
 <script>
     console.log("Hello World!")
-
-    function randomValueGenerator () {
+    
+    function getComputerChoice () {
         let randomValue = (Math.floor(Math.random() * 100) + 1);
-        return randomValue
+        // console.log(randomValue)
+        if (randomValue <= 33) {
+            return "rock";
+        } else if (randomValue >= 66) {
+            return "scissors";
+        } else {
+            return "paper";
+        }
     }
-
+    let computerChoice = getComputerChoice();
+    // console.log(computerChoice);
     
 </script>

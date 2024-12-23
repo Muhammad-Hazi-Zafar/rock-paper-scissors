@@ -14,5 +14,21 @@
     }
     let computerChoice = getComputerChoice();
     // console.log(computerChoice);
-    
+
+    function getHumanChoice() {
+        let startGame = prompt("Hello! Want to play Rock Paper Scissors? [y/n]");
+        startGame = startGame.toLowerCase();
+        // console.log(startGame)
+        if ((startGame == "y") || (startGame == "yes") || (startGame == "yes!")) {
+            let choice = prompt("What do you want to play? ");
+            choice = choice.toLowerCase();
+            // console.log(choice)
+            return choice;
+        } else {
+            console.log("Ok! Have a nice day then.")
+        }
+    }
+    let humanChoice = getHumanChoice();
+    // console.log(humanChoice)
+
 </script>
